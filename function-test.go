@@ -2,16 +2,15 @@ package main
 
 import "fmt"
 
-func functiontest(aa int, bb int) int {
+func sum(a int, b int) int {
 	var c int
-	c = aa + bb
-	return (c)
+	c = a + b
+	return c
 }
+
 func main() {
-	var a int
+	var a, b int
 	a = 10
-	b := 11
-	fmt.Println(" A=", a)
-	c := functiontest(a, b)
-	fmt.Println("Ans==", c)
+	b = 111
+	fmt.Println(" ANS ==> ", sum(a, b))
 }
